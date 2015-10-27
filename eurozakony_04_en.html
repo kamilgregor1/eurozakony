@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Topics of bills</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,700">
+    <link rel="stylesheet" type="text/css" href="https://google-developers.appspot.com/_static/02d12f0383/css/devsite?hl=cs-cyan.css" >
+    <script src="https://google-developers.appspot.com/_static/02d12f0383/js/prettify-bundle.js?hl=cs"></script>
+  
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script id="jqueryui" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" defer async></script>
+    <script src="//www.google.com/jsapi?key=AIzaSyCZfHRnq7tigC-COeQRmoa9Cxr0vbrK6xw&hl=cs"></script>
+    <script src="https://google-developers.appspot.com/_static/02d12f0383/js/framebox.js?hl=cs"></script>
+  </head>
+  <body class="devsite-layout-docs devsite-framebox">
+<p style="display: none; height: 0; width: 0">This is a snippet from developers.google.com</p>
+  <script type="text/javascript">
+    google.load("visualization", '1.1', {packages:['corechart']});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Category','Eurobills','Other bills'],
+['municipality',1,60],
+['referendum',1,27],
+['Constitution',2,50],
+['tertiary education',1,23],
+['property rental',1,23],
+['budgetary deficit',1,21],
+['salary',2,41],
+['gambling',1,20],
+['local autonomy',2,38],
+['flood',1,19],
+['local elections',1,18],
+['parliamentary elections',1,18],
+['organization of elections',1,18],
+['regional institutions of the public sector',1,17],
+['child',2,33],
+['compensation',2,32],
+['employer',1,16],
+['crime against individuals',1,16],
+['state-owned land',1,16],
+['administrative penalty',1,15]
+      ]);
+
+      var options = {
+        width: 550,
+        height: 450,
+        legend: { position: 'bottom', maxLines: 3 },
+        bar: {groupWidth: '75%'},
+        isStacked: true,
+		title: "20 topics with the lowest share of eurobills",
+		hAxis: { title: "Number of bills" },
+		chartArea: {width: '100%', height: '70%', top:50, left:200},
+		colors: ["blue", "red"],
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('barchart_stacked'));
+      chart.draw(data, options);
+  }
+  </script>
+<div id="barchart_stacked" style="width: 900px; height: 300px;"></div>
+
+    
+  
+    <input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: null, &quot;dimension5&quot;: &quot;cs&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed out&quot;}, &quot;gaid&quot;: &quot;UA-22084204-3&quot;}">
+  
+    <input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension7&quot;: &quot;plus&quot;}, &quot;gaid&quot;: &quot;UA-24532603-1&quot;}">
+  
+
+
+
+    <script>
+      
+      
+        window.prettyPrint();
+      
+      devsite.analytics.InitAnalytics();
+      devsite.permissions.init({"098dafe57affddc137df300142652cfd": true, "6749dcb526ce9bde6993550c7d928d24": true, "993b1906435224595bd618f6f331ee45": true});
+      devsite.base.init();
+      devsite.clickToCopy.init();
+      
+    </script>
+  </body>
+</html>
+

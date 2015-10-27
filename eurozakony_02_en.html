@@ -1,0 +1,63 @@
+<html>
+  <head>
+      <title>Duration of the legislative process</title>
+      <meta charset="UTF-8">  
+    <script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+
+    <script type="text/javascript">
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Number of days');
+      data.addColumn('number', 'Eurobills');
+      data.addColumn('number', 'Other bills');
+
+      data.addRows([
+        ['1-50',0,4],
+['51-100',7,13],
+['101-150',11,15],
+['151-200',26,23],
+['201-250',23,18],
+['251-300',17,11],
+['301-350',7,8],
+['351-400',3,3],
+['401-450',1,2],
+['451-500',1,1],
+['501-550',1,1],
+['551-600',3,3]
+        ]);
+
+        var options = {
+        hAxis: {
+          title: 'Number of days'
+        },
+        vAxis: {
+          title: 'Share of bills (%)'
+        },
+        colors: ['blue', 'red'],
+		curveType: 'function',
+		legend: { position: "bottom" },
+		title: "Duration of the legislative process from introduction to publication in the Law",
+		chartArea: {width: '80%', height: '70%', top:50},
+		width: 550,
+		height: 450,
+      };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>

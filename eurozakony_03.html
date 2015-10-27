@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Témata eurozákonů</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,700">
+    <link rel="stylesheet" type="text/css" href="https://google-developers.appspot.com/_static/02d12f0383/css/devsite?hl=cs-cyan.css" >
+    <script src="https://google-developers.appspot.com/_static/02d12f0383/js/prettify-bundle.js?hl=cs"></script>
+  
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script id="jqueryui" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" defer async></script>
+    <script src="//www.google.com/jsapi?key=AIzaSyCZfHRnq7tigC-COeQRmoa9Cxr0vbrK6xw&hl=cs"></script>
+    <script src="https://google-developers.appspot.com/_static/02d12f0383/js/framebox.js?hl=cs"></script>
+  </head>
+  <body class="devsite-layout-docs devsite-framebox">
+<p style="display: none; height: 0; width: 0">This is a snippet from developers.google.com</p>
+  <script type="text/javascript">
+    google.load("visualization", '1.1', {packages:['corechart']});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Kategorie','Eurozákony','Ostatní zákony'],
+['ochrana rostlin',10,1],
+['komunitární politika zaměstnanosti',9,1],
+['spolupráce v oblasti justice',9,1],
+['investiční společnost',8,1],
+['volný pohyb pracovníků',7,1],
+['mezinárodní trestní právo',6,1],
+['investiční politika',6,1],
+['prevence znečištění',6,1],
+['ochrana zdraví rostlin',6,1],
+['ekologická politika Společenství',6,1],
+['finanční trh',16,3],
+['šlechtění rostlin',5,1],
+['veřejná obchodní společnost',5,1],
+['dohled nad trhem',5,1],
+['daň z pohonných hmot',5,1],
+['víno',5,1],
+['nebezpečná látka',19,4],
+['národní implementace práva Společenství',9,2],
+['přibližování legislativy',44,10],
+['účetní',4,1]
+      ]);
+
+      var options = {
+        width: 650,
+        height: 450,
+        legend: { position: 'bottom', maxLines: 3 },
+        bar: {groupWidth: '75%'},
+        isStacked: true,
+		title: "20 témat s největším podílem eurozákonů",
+		hAxis: { title: "Počet zákonů" },
+		chartArea: {width: '100%', height: '70%', top:50, left:200},
+		colors: ["blue", "red"],
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('barchart_stacked'));
+      chart.draw(data, options);
+  }
+  </script>
+<div id="barchart_stacked" style="width: 900px; height: 300px;"></div>
+
+    
+  
+    <input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: null, &quot;dimension5&quot;: &quot;cs&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed out&quot;}, &quot;gaid&quot;: &quot;UA-22084204-3&quot;}">
+  
+    <input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension7&quot;: &quot;plus&quot;}, &quot;gaid&quot;: &quot;UA-24532603-1&quot;}">
+  
+
+
+
+    <script>
+      
+      
+        window.prettyPrint();
+      
+      devsite.analytics.InitAnalytics();
+      devsite.permissions.init({"098dafe57affddc137df300142652cfd": true, "6749dcb526ce9bde6993550c7d928d24": true, "993b1906435224595bd618f6f331ee45": true});
+      devsite.base.init();
+      devsite.clickToCopy.init();
+      
+    </script>
+  </body>
+</html>
+

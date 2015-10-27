@@ -1,0 +1,43 @@
+<p>How much is decided in Brussels? Open parliamentary data provides an answer!</p>
+
+<p>Last year, the British media <a href="https://fullfact.org/europe/eu_make_uk_law-29587"><strong>debated</strong></a> an interesting question of how much of changes made to the national law is affected by decisions taken at the EU level after Viviane Reding, a former EU commissioner, put forward that it could be as much as 70 %.</p>
+
+<p>This struck me as very interesting so I decided to take a look at how much it could be in my country, Czech Republic. The <a href="http://www.psp.cz/sqw/hp.sqw?akk=3"><strong>lower chamber</strong></a> of the Parliament keeps excellent track of which bills are tied to the EU. This information is available as <a href="http://www.psp.cz/sqw/hp.sqw?k=1300"><strong>open data</strong></a>. It is therefore relatively easy to retrieve and analyse bills in bulk to gain valuable insight into the legislative process.</p>
+
+<p>European institutions do not directly dictate the law. In most cases, only an outline of required changes is approved at the European level and individual member states are more or less free to decide on details. I took a look at all bills proposed since 2004 when the country entered the EU.</p>
+
+<p>It turns out that about 30 % of all bills transpose the European legislation into the national law. These bills are introduced by the government (as opposed to MPs who can also introduce bills) and constitute about 50 % of government legislative activity. This is more or less constant over time – even Eurosceptic governments in 2006-2010 proposed these "eurobills" about as much as other governments.</p>
+
+<p>Once introduced, the "eurobills" are much more likely to successfully complete the legislative process. A chart below shows shares of bills according to their status in various electoral terms. In the past terms (2002-2013), all bills that were "not approved" are considered rejected. In the current term, the "not approved" bills can still complete the legislative process.</p>
+
+<p><iframe src="http://kohovolit.eu/wp/kamil/eurozakony/eurozakony_01_en.html" width=550 height=450 frameborder=0 scrolling=no></iframe></p>
+
+<p>A large difference in success rates of the "eurobills" and other bills is partially caused by the fact that other bills include bills introduced by MPs which are less likely to be approved. However, the "eurobills" are more successful even in a group of government-sponsored bills, although the difference is smaller. The chart also shows that a number and the success rate of the "eurobills" remains relatively stable over time.</p>
+
+<p>When we look at the successful bills, it turns out that duration of the legislative process is about the same in the group of the "eurobills" and other bills, as evidenced by a chart below.</p>
+
+<p><iframe src="http://kohovolit.eu/wp/kamil/eurozakony/eurozakony_02_en.html" width=550 height=450 frameborder=0 scrolling=no></iframe></p>
+
+<p>An important question is what these "eurobills" are actually about. Open parliamentary data allows me to find an answer relatively easily. Each bill is accompanied by several descriptors (e.g. <a href="http://www.psp.cz/sqw/historie.sqw?o=7&T=42"><strong>here</strong></a> at the bottom of the page) that correspond to policy areas or topics covered by the bills. I can therefore compare frequency of the "eurobills" and other bills related to individual descriptors.</p>
+
+<p>A chart below shows topics with the highest share of the "eurobills" out of all approved bills since 2002. Apart from specifically EU-related policies, EU influences e.g. environmental protection or financial regulation. A table with all descriptors is available <a href="https://docs.google.com/spreadsheets/d/19u9jc9QQfoFAYKd-pKB_QU5kyicioHBq0Gjdbh9GldI/pubhtml?gid=0&amp;single=true"><strong>here</strong></a> (in Czech).</p>
+
+<p><iframe src="http://kohovolit.eu/wp/kamil/eurozakony/eurozakony_03_en.html" width=550 height=450 frameborder=0 scrolling=no></iframe></p>
+
+<p>A chart below shows topics with the lowest share of the "eurobills". These are policy areas where the impact of the EU legislation is relatively small. They are dominated mainly by changes of the political system (e.g. local autonomy, the Constitution, elections).</p>
+
+<p><iframe src="http://kohovolit.eu/wp/kamil/eurozakony/eurozakony_04_en.html" width=550 height=450 frameborder=0 scrolling=no></iframe></p>
+
+<p>The last interesting question is how is actually pushing these "eurobills" in the Parliament. Are there any differences in parliamentary voting of MPs about the "eurobills" when compare to other bills? To answer this question I use the principal component analysis described in detail e.g. in <a href="http://blog.openingparliament.org/post/118939703591/its-pretty-and-it-moves-or-how-to-visualize"><strong>this article</strong></a>.</p>
+
+<p>It returns a scatterplot below where each point corresponds to one MP. The smaller the distance between any two points in the plot, the more frequently the corresponding legislators voted exactly the same way. Two legislators that vote the same way every time would occupy exactly the same spot in the chart. And conversely two legislators that vote the opposite ways every time (e.g. the first in favour and the second against) would be very distant from each other.</p>
+
+<p><iframe src="http://kohovolit.eu/wp/kamil/eurozakony/eurozakony_wpca_7_en/index.html" width=550 height=550 frameborder=0 scrolling=no></iframe></p>
+
+<p>Each MP is actually represented by two points – opaque points correspond to voting behavior during votes on the "eurobills" and transparent points correspond to voting behavior during votes on other bills. If opaque and transparent points representing MPs of the same party occupy similar positions in the scatterplot, the MPs actually voted similarly on both types of legislation.</p>
+
+<p>There are almost no differences in voting patterns of the current government MPs (orange, gold and cyan points) – they supported the "eurobills" as often as other bills. There are some differences among the opposition. Particularly the Communist MPs (red) voted more often with the government on the "eurobills", their opaque points are thus closer to the governmental MPs than their transparent points.</p>
+
+<p>The opposite is true about the other oppositional parties (blue, violet, green) – they voted more often with the government on other bills than on the "eurobills". The difference is, however, only small. This is surprising given that e.g. ODS (blue) is a Eurosceptic party while TOP 09 (violet) is relatively much more pro-EU. However, this difference is not translated into voting in the Parliament.</p>
+
+<p><i><a href="https://twitter.com/kamilgregor" target="_newtab"><strong>Kamil Gregor</strong></a> is a data analyst with <a href="http://kohovolit.eu/en/" target="_newtab"><strong>KohoVolit.eu</strong></a> and <a href="http://www.muni.cz/?lang=en" target="_newtab"><strong>Masaryk University</strong></a> in Brno, Czech Republic.</i></p>

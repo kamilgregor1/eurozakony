@@ -1,0 +1,63 @@
+<html>
+  <head>
+      <title>Doba schvalování eurozákonů</title>
+      <meta charset="UTF-8">  
+    <script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+
+    <script type="text/javascript">
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Počet dnů');
+      data.addColumn('number', 'Eurozákony');
+      data.addColumn('number', 'Ostatní zákony');
+
+      data.addRows([
+        ['1-50',0,4],
+['51-100',7,13],
+['101-150',11,15],
+['151-200',26,23],
+['201-250',23,18],
+['251-300',17,11],
+['301-350',7,8],
+['351-400',3,3],
+['401-450',1,2],
+['451-500',1,1],
+['501-550',1,1],
+['551-600',3,3]
+        ]);
+
+        var options = {
+        hAxis: {
+          title: 'Počet dní'
+        },
+        vAxis: {
+          title: 'Podíl zákonů (%)'
+        },
+        colors: ['blue', 'red'],
+		curveType: 'function',
+		legend: { position: "bottom" },
+		title: "Doba schvalování zákonů od předložení po vytištění ve Sbríce",
+		chartArea: {width: '80%', height: '70%', top:50},
+		width: 650,
+		height: 450,
+      };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>

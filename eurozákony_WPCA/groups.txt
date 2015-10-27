@@ -1,0 +1,12 @@
+group_id	group_abbreviation	color
+153	ÈSSD	orange
+155	ODS	blue
+154	KSÈM	red
+595	Koalice	gold
+156	US	darkviolet
+151	KDU-ÈSL	gold
+749	SZ	green
+949	VV	cyan
+948	TOP 09	darkviolet
+1105	Úsvit	yellowgreen
+1104	ANO	cyan
